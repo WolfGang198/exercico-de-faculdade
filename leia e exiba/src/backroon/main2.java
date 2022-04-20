@@ -1,33 +1,35 @@
-package backroon;
+
+package javaapplication1;
 
 import java.util.Scanner;
 
-public class main2 {
-
-	public static void main(String[] args) 
+public class main {
+    
+    public static void main(String[] args) 
 	{
-		Scanner read = new Scanner(System.in);
+		Backroon BK = new Backroon();
+                Scanner read = new Scanner(System.in);
 		int a = 0;
 		while(a<=4)
 		{
 			int number;
 			
 			System.out.printf("escreva um numero: \n");
-			System.out.println("[1] - média \n");
-			System.out.println("[2] - média \n");
-			System.out.println("[3] - média \n");
-			System.out.println("[4] - média \n");
-			System.out.println("[5] - sair \n");
+			System.out.println("[1] - MÃ©dia \n");
+			System.out.println("[2] - GeomÃ©trica \n");
+			System.out.println("[3] - mÃ©dia \n");
+			System.out.println("[4] - mÃ©dia \n");
+			System.out.println("[5] - Sair \n");
 		
 			number = read.nextInt();
 			
 			switch(number)
 			{
 				case 1:
-					public void Media();    
+                                    BK.Media();    
 				break;
 				case 2:
-				    
+				    BK.Geometrica();
 				break;
 				case 3:
 				    
